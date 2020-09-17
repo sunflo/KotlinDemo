@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_trigger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toDataBinding"
+        android:text="mvvm"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toSensor"
+        android:text="sensor"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn_anno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toSensorAnno"
+        android:text="ANNO"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toDemoView"
+        android:text="View"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toMapView"
+        android:text="map"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_sensor_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toSensorDemo"
+        android:text="cube"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_hencoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:onClick="toHendCoder"
+        android:text="hencoder"
+        android:textSize="20sp" />
+
+</LinearLayout>
