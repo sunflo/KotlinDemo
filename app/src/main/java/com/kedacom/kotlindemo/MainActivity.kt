@@ -10,7 +10,8 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.kedacom.kmap.arch.config.KMapManager
+import com.kedacom.kmap.arch.map.KMapManager
+
 import com.kedacom.kmap.plugin.mapbox.MapboxAdapter
 import com.kedacom.kotlindemo.hencoder.HenCoderActivity
 import com.kedacom.kotlindemo.vm.MainActivityViewModel
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     private fun initMap() {
 
 
-        KMapManager.setMapadapter(
+        KMapManager.setMapAdapter(
                 MapboxAdapter()
                         .mapMaxLevel(19)
                         .mapLevel(14)

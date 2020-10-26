@@ -18,7 +18,7 @@ class FlipBoardFragment : BaseWidgetFragment() {
     init {
         mTitle = "FlipBoard"
     }
-
+    val set  = AnimatorSet()
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val fragment = inflater.inflate(R.layout.fragment_flipboard, container, false)
         val flipView = fragment.findViewById<FlipView>(R.id.flipview)
@@ -34,7 +34,7 @@ class FlipBoardFragment : BaseWidgetFragment() {
         animator3.duration = 500
         animator3.startDelay = 500
 
-        val set = AnimatorSet()
+
         set.addListener(object : AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
                 super.onAnimationEnd(animation)
@@ -50,4 +50,15 @@ class FlipBoardFragment : BaseWidgetFragment() {
 
         return fragment
     }
+
+    override fun onResume() {
+        super.onResume()
+        set.start()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        set.pause()
+    }
+
 }

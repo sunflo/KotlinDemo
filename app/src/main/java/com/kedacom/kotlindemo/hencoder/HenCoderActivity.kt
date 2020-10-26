@@ -5,19 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.PagerAdapter
-import com.google.android.material.tabs.TabLayout
 import com.kedacom.kotlindemo.R
 import com.kedacom.kotlindemo.databinding.ActivityHencoderBinding
 import com.kedacom.kotlindemo.hencoder.flp.FlipBoardFragment
+import com.kedacom.kotlindemo.hencoder.swt.SwitchViewDemoFragment
 import com.kedacom.kotlindemo.hencoder.zan.LikeThumbFragment
-import kotlinx.android.synthetic.main.activity_hencoder.view.*
 
 /**
  * @author keda
  */
 class HenCoderActivity : AppCompatActivity() {
-    val pages = arrayOf(FlipBoardFragment(), LikeThumbFragment(), BaseWidgetFragment(), BaseWidgetFragment())
+    val pages = arrayOf(FlipBoardFragment(), LikeThumbFragment(), SwitchViewDemoFragment(), BaseWidgetFragment())
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val bind: ActivityHencoderBinding = DataBindingUtil.setContentView(this, R.layout.activity_hencoder)

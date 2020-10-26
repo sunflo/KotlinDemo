@@ -64,7 +64,7 @@ class LikeView @JvmOverloads constructor(
         arr.recycle()
 //
         mDrawablePaint = Paint(Paint.ANTI_ALIAS_FLAG)
-        mTvPaint = Paint()
+        mTvPaint = Paint(Paint.ANTI_ALIAS_FLAG)
         mCirclePaint = Paint()
         mTvPaint.textSize = textSizeDp
         lineGap = mTvPaint.fontSpacing

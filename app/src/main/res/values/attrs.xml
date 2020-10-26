@@ -3,4 +3,15 @@
     <declare-styleable name="FlipView">
         <attr name="showImage" format="reference" />
     </declare-styleable>
+    <declare-styleable name="LikeView">
+        <attr name="likeCountTextColor" format="color" />
+        <attr name="likeCountTextColorChecked" format="color" />
+        <attr name="likeCountTextSize" format="dimension" />
+        <attr name="currentCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LotteryView">
+        <attr name="viewBackground" format="reference" />
+        <attr name="viewForeground" format="reference|color" />
+        <attr name="maxPercent" format="float" />
+    </declare-styleable>
 </resources>
